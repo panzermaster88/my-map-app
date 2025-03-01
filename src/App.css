@@ -1,0 +1,40 @@
+/* Ensure full-screen layout */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Ensure container fills the screen */
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Fix the map size */
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+/* Style for checkbox controls */
+.controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.checkbox-label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
